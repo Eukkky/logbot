@@ -1,0 +1,19 @@
+{
+  "name": "logbot",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "yarn clean && yarn transpile",
+    "clean": "yarn rimraf dist && mkdir dist",
+    "transpile": "yarn tsc"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  }
+}
